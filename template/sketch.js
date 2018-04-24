@@ -1,3 +1,5 @@
+//vector information 'https://p5js.org/reference/#/p5.Vector'
+
 var particle1;
 
 
@@ -31,7 +33,7 @@ function drawParticle(x, y) {
       acc.add(force);
     };
   
-    update = function() {
+    update = function() { //does the math below then clears the acceleration to be reset back to zero again.
       // Velocity changes according to acceleration
       vel.add(acc);
       // position changes by velocity
